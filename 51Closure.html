@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure in JavaScript</title>
+</head>
+<body>
+    <script>
+        function show(){
+            var j= "Function outside";
+            document.write(j);
+            function innerShow(){
+                var k="Function inner";
+                document.write(k);
+            document.write(j);
+
+            }
+            innerShow()
+        }
+        show();
+    </script>
+</body>
+</html>

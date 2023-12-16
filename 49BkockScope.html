@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Scope</title>
+</head>
+<body>
+    <script>
+        if(true){
+            var j="This is a gloable variable eventhough it is inside IF block<br>"
+            document.write(j)
+        }
+        document.write(j)
+
+        if(true){
+            let i="This is not  a gloable variable <br>"
+            document.write(i)
+        }
+        document.write(i)
+    </script>
+</body>
+</html>

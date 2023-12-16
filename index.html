@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Set time out function in javascript</title>
+</head>
+<body>
+	<p id="myid">
+		Nepali unicode is a converter and it is the easiest way to type in nepali unicode font. Type in nepali romanized font below and it will automatically convert romanized nepali text into Nepali font called nepali unicode. This Nepali unicode is widely usable in any media, machine or browser. This can be use in chatting, emailing, messaging, facebook and many others.
+		<br>
+		<button type="button" id="mybtn">Button</button>
+	</p>
+	<script >
+		var timeout= setTimeout(() =>{
+			document.getElementById('myid').style='color:green';
+		},5000);
+		function clearTime(){
+			clearTimeout(timeout);
+		}
+		document.getElementById("mybtn").addEventListener("click",clearTime);
+
+	</script>
+
+</body>
+</html>

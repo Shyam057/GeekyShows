@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taking input in 2 dimensional array</title>
+</head>
+<body>
+    <script>
+        var cols=2;
+        var rows=2;
+        var arr= new Array(rows);
+        for(let i=0; i<rows;i++){
+             arr[i]= new Array(cols)
+        }
+        for(let i=0; i<rows; i++){
+            for(let j=0; j<cols;j++){
+                arr[i][j]=prompt("Enter element");
+            }
+        }
+        for(let i=0; i<rows; i++){
+            for(let j=0; j<cols;j++){
+               document.write(arr[i][j]+"<br>");
+            }
+        }
+    </script>
+    
+</body>
+</html>

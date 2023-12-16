@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passing anonymous function as an argument</title>
+</head>
+<body>
+    <script>
+        function myfunction(display){
+            return display()
+        }
+        document.write(myfunction(function(){
+            return "Hello world";
+        }))
+    </script>
+</body>
+</html>
